@@ -109,7 +109,7 @@ class TasksController extends Controller
         $task->content = $request->content;
         $task->status = $request->status;
         $task->save();
-        return redirect('/');
+        return redirect('/tasks');
     }
 
     /**
@@ -128,6 +128,6 @@ class TasksController extends Controller
             $task->delete();
         }
         
-        return redirect('/');
+        return redirect('/tasks');
     }
 }
